@@ -29,6 +29,13 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+bower_components
+css
+fonts
+img
+js
+videos
+Static/compiled
 
 # Optional npm cache directory
 .npm

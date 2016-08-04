@@ -1,0 +1,228 @@
+@import "_finance_insurance_ar";
+
+.finance-insurance-top-content {
+    @extend .no-slider-padding;
+    padding-bottom: rem(25px);
+    background-color: #efefef;
+
+    h1 {
+        @extend .big-heading-group;
+        line-height: rem(50px);
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+
+    p {
+        @extend .text-paragraph;
+    }
+}
+
+.finance-insurance-form-container {
+    background-color: #fff;
+
+    .finance-insurance__tab-row {
+        background-color: #efefef;
+        border-bottom: rem(1px solid #d2d2d2);
+        padding: rem(0 20px 0);
+
+        @include respond-to-min($tabletSize) {
+        }
+
+        @include respond-to-min($desktopSize) {
+            padding: rem(0 50px 0);
+        }
+
+        &::after {
+            content: '';
+            height: 0px;
+            display: block;
+            clear: both;
+        }
+
+        .finance-insurance__tab-column {
+            @extend .tab-item;
+            width: 50%;
+            float: left;
+            border-left: rem(1px solid #dadbe2);
+            background-color: #efefef;
+
+            &::before {
+                height: 0;
+            }
+
+            &:first-child {
+                border-left: none;
+            }
+
+            &.active {
+                background-color: #fff;
+
+                &:first-child {
+                    border-left: rem(1px solid #dadbe2);
+                }
+
+                &:last-child {
+                    border-right: rem(1px solid #dadbe2);
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    background-color: #fff;
+                    width: 100%;
+                    height: rem(4px);
+                    left: 0px;
+                    bottom: rem(-2px);
+                    top: auto;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: rem(5px);
+                    background-color: $orangeBorder;
+                }
+            }
+
+            span {
+                @include respond-to-min($desktopSize) {
+                    @include both-center(absolute);
+                }
+            }
+        }
+    }
+}
+
+.container-fluid {
+
+    .header-form-group {
+        font-size: rem(16px);
+        line-height: rem(20px);
+        color: #000;
+        position: relative;
+        text-transform: uppercase;
+        margin: rem(0 0 20px);
+        @include latoBold();
+        padding: rem(15px 0 15px 32px);
+        letter-spacing: rem(1px);
+        word-spacing: rem(2px);
+
+        @include respond-to-min($tabletSize) {
+            padding: rem(20px 0 20px 32px);
+        }
+
+        img {
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            @include vertical-align(absolute);
+            max-width: rem(30px);
+        }
+    }
+
+    .finance-insurance-form-list {
+        display: none;
+        background-color: #fff;
+        margin: rem(0 -50px);
+        padding: rem(20px 50px 0);
+
+        &.active {
+            display: block;
+        }
+
+        .col-sm-6 {
+            &:nth-child(2n+1) {
+                padding-left: 0px;
+                padding-right: 0;
+            }
+
+            &:nth-child(2n) {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            margin-bottom: rem(10px);
+
+            @include respond-to-min($tabletSize) {
+                margin-bottom: rem(20px);
+
+                &:nth-child(2n+1) {
+                    padding-right: rem(10px);
+                }
+
+                &:nth-child(2n) {
+                    padding-left: rem(10px);
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+
+                &:nth-child(2n+1) {
+                    padding-right: rem(30px);
+                }
+
+                &:nth-child(2n) {
+                    padding-left: rem(30px);
+                }
+            }
+        }
+
+        .col-without-padding-horizontal {
+            @include respond-to-min($desktopSize) {
+                margin-bottom: rem(20px);
+            }
+        }
+    }
+
+    .finance-insurance-form-recaptcha {
+        padding-bottom: rem(50px);
+
+        .col-xs-12 {
+            position: relative;
+        }
+    }
+
+    .g-recaptcha {
+        margin-bottom: rem(20px);
+
+        @include respond-to-max(342px) {
+            margin-left: rem(-10px);
+            @include horizontal-center(relative);
+        }
+    }
+
+    .group-two-input {
+        position: relative;
+        font-size: 0;
+
+        .input-selection-container {
+            display: inline-block;
+
+            &:first-child {
+                input, select, span {
+                    border-right: none;
+                }
+            }
+        }
+
+        .select-item-phone {
+            width: 40%;
+
+            @include respond-to-min($desktopSize) {
+                width: 30%;
+            }
+        }
+
+        .input-item-phone {
+            width: 60%;
+
+            @include respond-to-min($desktopSize) {
+                width: 70%;
+            }
+        }
+    }
+}
