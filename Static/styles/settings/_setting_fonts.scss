@@ -34,3 +34,13 @@
 @mixin arial(){
     font-family: Arial, Helvetica, sans-serif;
 }
+
+@mixin raleBlack(){
+    font-family: 'Raleway Black';
+    font-size: rem(18px);
+}
+
+@mixin raleMedium(){
+    font-family: 'Raleway Medium';
+    font-size: rem(15px);
+}
