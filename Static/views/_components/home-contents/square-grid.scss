@@ -1,0 +1,34 @@
+.square-grid{
+    width: 100%;
+
+    .same-height{
+
+        > div{
+            overflow: hidden;
+            min-height: 340px;
+            padding: 0;
+
+            .content{
+                margin: 40px;
+
+                h2{
+                    font-size: 34px;
+                    text-transform: uppercase
+                }
+
+                p{
+                    font-size: 18px;
+                    margin-top: 40px
+                }
+            }
+
+            &.left{
+                background: rgb(230, 149, 36)
+            }
+
+            &.right{
+                background: rgb(14, 116, 128)
+            }
+        }
+    }
+}
