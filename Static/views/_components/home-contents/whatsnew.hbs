@@ -1,0 +1,62 @@
+---
+title: "Whatsnew"
+---
+
+<div class="whatsnew">
+    <div class="container-fluid">
+        <div class="title">
+            <h2>What's new</h2>
+        </div>
+        <div class="article-campaign">
+            <div class="article-campaign__body">
+                {{#each home-whatsnew.items}}
+                <div class="content-column">
+                    {{#if this.odd}}
+                        <div class="article">
+                            <a class="article__link" href="#">
+                                <div class="article__image">
+                                    <img src="{{this.news-grid-article.article__image.src}}">
+                                </div>
+                                <div class="article__content">
+                                    <h2 class="date">{{this.news-grid-article.article__body.date}}</h2>
+                                    <p class="content">{{this.news-grid-article.article__body.content}}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="campaign">
+                            <a class="campaign__link">
+                                <img src="{{this.news-grid-campaign.src}}">
+                                <div class="text">
+                                    <h2>{{this.news-grid-campaign.title}}</h2>
+                                    <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    {{else}}
+                        <div class="campaign">
+                            <a class="campaign__link">
+                                <img src="{{this.news-grid-campaign.src}}">
+                                <div class="text">
+                                    <h2>{{this.news-grid-campaign.title}}</h2>
+                                    <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="article">
+                            <a class="article__link" href="#">
+                                <div class="article__image">
+                                    <img src="{{this.news-grid-article.article__image.src}}">
+                                </div>
+                                <div class="article__content">
+                                    <h2 class="date">{{this.news-grid-article.article__body.date}}</h2>
+                                    <p class="content">{{this.news-grid-article.article__body.content}}</p>
+                                </div>
+                            </a>
+                        </div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,34 +1,52 @@
 .square-grid{
     width: 100%;
 
-    .same-height{
+    .square-item{
+        overflow: hidden;
+        min-height: 340px;
+        padding: 0;
 
-        > div{
-            overflow: hidden;
-            min-height: 340px;
-            padding: 0;
+        .content{
+            margin: 58px 74px;
+            color: #fff;
 
-            .content{
-                margin: 40px;
-
-                h2{
-                    font-size: 34px;
-                    text-transform: uppercase
-                }
-
-                p{
-                    font-size: 18px;
-                    margin-top: 40px
-                }
+            h2{
+                font-size: 34px;
+                text-transform: uppercase
             }
 
-            &.left{
-                background: rgb(230, 149, 36)
+            p{
+                font-size: 18px;
             }
 
-            &.right{
-                background: rgb(14, 116, 128)
+            
+        }
+
+        &.square-img{
+            img{
+                width: 100%;
+                transition: all 0.3s ease-in-out;
+                height: 340px;
+            }
+
+            &:hover img{
+                transform: scale(1.1);
             }
         }
+
+        &.left{
+            background: rgb(230, 149, 36)
+        }
+
+        &.right{
+            background: rgb(14, 116, 128)
+        }
     }
+    
+}
+
+.arrow-circle{
+    width: 30px;
+    height: 30px;
+    background: url('/img/icons/arrow-circle.png');
 }

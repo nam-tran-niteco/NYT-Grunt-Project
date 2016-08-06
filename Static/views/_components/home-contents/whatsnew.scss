@@ -1,0 +1,108 @@
+.whatsnew{
+    $item-height: 250px;
+    $transition: all 0.3s ease-in-out;
+    width: 100%;
+    background: url('/img/whatsnews.png');
+
+    h2{
+        text-transform: uppercase
+    }
+
+    .title{
+
+        h2{
+            color: #1a9fe0;
+            font-size: 140px;
+            text-align: center;
+            margin: 0;
+            transform: translateY(60px)
+        }
+    }
+
+    .article-campaign{
+        overflow: hidden;
+        width: 100%;
+
+        .article-campaign__body{
+            margin-left: 10%;
+            width: 100%;
+
+            .content-column{
+                float: left;
+                width: 25%;
+
+                .article__image, .article__content, .campaign{
+                    height: $item-height;
+                    overflow: hidden;
+                    position: relative
+                }
+
+                .article__image, .campaign{
+                    img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        transition: $transition
+                    }
+
+                    &:hover img{
+                        transform: scale(1.1)
+                    }
+                }
+
+                .article__content{
+                    background: #e1ebf4;
+                    padding: 25px 23px;
+
+                    h2{
+                        font-size: 12px;
+                        color: #68757d
+                    }
+
+                    p{
+                        font-size: 18px;
+                        color: #084c96
+                    }
+                }
+
+                .article__image:before{
+                    $triborder-width: 23px;
+                    content:'';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    bottom: 0px;
+                    left: 50%;
+                    margin-left: -$triborder-width;
+                    z-index: 999999;
+                    border-right: $triborder-width solid transparent;
+                    border-left: $triborder-width solid transparent;
+                    border-bottom: $triborder-width solid #e1ebf4;
+                }
+
+                .campaign{
+                    padding-left: 23px;
+
+                    .text{
+                        position: absolute;
+                        bottom: 30px;
+                        color: #fff;
+
+                        h2{
+                            font-size: 34px;
+                            margin: 0;
+                        }
+
+                        h3{
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
