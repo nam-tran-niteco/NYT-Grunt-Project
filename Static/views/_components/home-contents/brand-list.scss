@@ -1,0 +1,44 @@
+.brand-list {
+	&__top {
+		height: 400px;
+		padding-top: 65px;
+		text-align: center;
+	}
+
+	&__bottom {
+		background-color: #fff;
+
+		& .container {
+			position: relative;
+
+			& ul {
+				position: absolute;
+				top: -200px;
+			}
+		}
+	}
+}
+
+.brand-category {
+	width: 25%;
+
+	&__link {
+		text-align: center;
+		padding-top: 20px !important;
+		padding-bottom: 60px !important;
+		text-transform: uppercase;
+		margin-right: 0 !important;
+
+		&:hover {
+			background-color: #fff !important;
+			color: #000;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 80px;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+}
