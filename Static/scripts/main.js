@@ -7,3 +7,19 @@ define(['jquery', 'underscore', 'base/modules/jitRequire', 'vendor/fastclick', '
 
         pageScrollAnimation.init($(document));
     });
+
+$('#brand-logos').owlCarousel({
+    dots: false,
+    nav: true,
+    responsive: {
+        0:{
+			items: 1
+        },
+        600: {
+			items: 3
+        },
+        1000: {
+			items: 5
+        }
+    }
+})

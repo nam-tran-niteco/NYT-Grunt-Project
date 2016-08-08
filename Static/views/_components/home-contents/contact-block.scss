@@ -53,12 +53,7 @@
 	    width: 45%;
 	}
 
-	&__link {
-		@extend %position-absolute;
-	    left: 240px;
-	    bottom: 40px;
-		& a {
-			text-transform: uppercase;
-		}
+	&__link a {
+		text-transform: uppercase;
 	}
 }
