@@ -1,0 +1,72 @@
+{
+    "items":[
+        {
+            "news-grid-article":{
+                "article__image":{
+                    "src": "/img/article-1.png"
+                },
+                "article__body":{
+                    "date": "october 15, 2015",
+                    "content": "DC Aviation Al-Futtaim expands maintenance capabilities to include Bombardier's Global 6000 and Global 5000 Vision Flight Deck"
+                }
+            },
+            "news-grid-campaign":{
+                "src": "/img/campaign-1.png",
+                "title": "f&f",
+                "subtitle": "25% off all Ladieswear"
+            },
+            "odd": true
+        },
+        {
+            "news-grid-article":{
+                "article__image":{
+                    "src": "/img/article-2.png"
+                },
+                "article__body":{
+                    "date": "october 15, 2015",
+                    "content": "International recognition beckons with just 19 days to go for Lexus Design Award 2016 submission"
+                }
+            },
+            "news-grid-campaign":{
+                "src": "/img/campaign-2.png",
+                "title": "ace",
+                "subtitle": "Outdoor Living 2016 Catalogue"
+            },
+            "odd": false
+        },
+        {
+            "news-grid-article":{
+                "article__image":{
+                    "src": "/img/article-3.png"
+                },
+                "article__body":{
+                    "date": "october 15, 2015",
+                    "content": "Al-Futtaim Engineering signs deal for multi-million Qatari Riyal MEP project for Doha Festival City"
+                }
+            },
+            "news-grid-campaign":{
+                "src": "/img/campaign-3.png",
+                "title": "lexus",
+                "subtitle": "Short Films Series"
+            },
+            "odd": true
+        },
+        {
+            "news-grid-article":{
+                "article__image":{
+                    "src": "/img/article-4.png"
+                },
+                "article__body":{
+                    "date": "october 15, 2015",
+                    "content": "Al-Futtaim expands maintenance capabilities to include Bombardier's Global 6000 and Global 5000 Vision Flight Deck"
+                }
+            },
+            "news-grid-campaign":{
+                "src": "/img/campaign-4.png",
+                "title": "toys'r'us",
+                "subtitle": "Have fun being playful"
+            },
+            "odd": false
+        }
+    ]
+}

@@ -148,7 +148,7 @@ module.exports = function (grunt) {
             images: {
                 expand: true,
                 cwd: '<%= project.dirs.images.main %>',
-                src: ['**/*.{png,jpg,gif,svg,ico}', '!icons/**', '!sprite/**'],
+                src: ['**/*.{png,jpg,gif,svg,ico}', 'icons/**', '!sprite/**'],
                 dest: '<%= project.dirs.images.out %>'
             },
             fonts: {
