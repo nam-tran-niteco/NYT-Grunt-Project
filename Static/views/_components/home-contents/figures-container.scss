@@ -1,0 +1,54 @@
+.figures-container{
+    background: #1a9fe0;
+    color: #fff;
+    @include ralewayNormal();
+
+    .title-content{
+        margin-top: 60px;
+        text-align: center;
+        font-size: 22px;
+        padding: 0 20%
+    }
+
+    .figures__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .figure{
+            
+            > span{
+                display: block;
+                text-align: center;
+
+                .figure{
+                    &__icon, &__number{
+                        display: inline-block
+                    }
+                    &__icon{
+                        $icon_size: 55px;
+                        width: $icon_size;
+                        height: $icon_size;
+
+                        > img{
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+
+                    &__number{
+                        @include ralewayBlack();
+                        font-size: 55px
+                    }
+                }
+            }
+
+            h4{
+                font-weight: 100;
+                font-size: 20px;
+                text-align: center
+            }
+        }
+        
+    }
+}
