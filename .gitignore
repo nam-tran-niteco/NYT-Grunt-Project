@@ -32,9 +32,11 @@ jspm_packages
 bower_components
 css
 fonts
+!Static/fonts
 img
 js
 videos
+!Static/videos
 Static/compiled
 
 # Optional npm cache directory

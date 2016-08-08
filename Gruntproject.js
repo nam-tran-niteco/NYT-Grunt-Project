@@ -8,7 +8,7 @@ const
     CLIENT_STYLES_DIR = path.join(BASE_DIR, 'styles'),
     CLIENT_FONTS_DIR = path.join(BASE_DIR, 'fonts'),
     CLIENT_IMAGES_DIR = path.join(BASE_DIR, 'images');
-    CLIENT_VIDEOS_DIR = path.join(BASE_DIR, 'video');
+    CLIENT_VIDEOS_DIR = path.join(BASE_DIR, 'videos');
 
 	var dirs = {
 	    resources: RESOURCES_DIR,
