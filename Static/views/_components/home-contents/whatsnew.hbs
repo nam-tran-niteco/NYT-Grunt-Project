@@ -13,7 +13,7 @@ title: "Whatsnew"
                 <div class="content-column">
                     {{#if this.odd}}
                         <div class="article">
-                            <a class="article__link" href="#">
+                            <a href="#">
                                 <div class="article__image">
                                     <img src="{{this.news-grid-article.article__image.src}}">
                                 </div>
@@ -24,26 +24,30 @@ title: "Whatsnew"
                             </a>
                         </div>
                         <div class="campaign">
-                            <a class="campaign__link">
-                                <img src="{{this.news-grid-campaign.src}}">
-                                <div class="text">
-                                    <h2>{{this.news-grid-campaign.title}}</h2>
-                                    <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                            <a href="#">
+                                <div class="campaign__content">
+                                    <img src="{{this.news-grid-campaign.src}}">
+                                    <div class="text">
+                                        <h2>{{this.news-grid-campaign.title}}</h2>
+                                        <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                                    </div>
                                 </div>
                             </a>
                         </div>
                     {{else}}
                         <div class="campaign">
-                            <a class="campaign__link">
-                                <img src="{{this.news-grid-campaign.src}}">
-                                <div class="text">
-                                    <h2>{{this.news-grid-campaign.title}}</h2>
-                                    <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                            <a href="#">
+                                <div class="campaign__content">
+                                    <img src="{{this.news-grid-campaign.src}}">
+                                    <div class="text">
+                                        <h2>{{this.news-grid-campaign.title}}</h2>
+                                        <h3>{{this.news-grid-campaign.subtitle}}</h3>
+                                    </div>
                                 </div>
                             </a>
                         </div>
                         <div class="article">
-                            <a class="article__link" href="#">
+                            <a href="#">
                                 <div class="article__image">
                                     <img src="{{this.news-grid-article.article__image.src}}">
                                 </div>

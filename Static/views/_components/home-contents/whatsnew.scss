@@ -24,20 +24,20 @@
         width: 100%;
 
         .article-campaign__body{
-            margin-left: 10%;
+            margin-left: 4%;
             width: 100%;
 
             .content-column{
                 float: left;
                 width: 25%;
 
-                .article__image, .article__content, .campaign{
+                .article__image, .article__content, .campaign__content{
                     height: $item-height;
                     overflow: hidden;
-                    position: relative
+                    position: relative;
                 }
 
-                .article__image, .campaign{
+                .article__image, .campaign__content{
                     img{
                         position: absolute;
                         top: 0;
@@ -45,7 +45,9 @@
                         width: 100%;
                         transition: $transition
                     }
+                }
 
+                .article, .campaign__content{
                     &:hover img{
                         transform: scale(1.1)
                     }
@@ -81,7 +83,7 @@
                     border-bottom: $triborder-width solid #e1ebf4;
                 }
 
-                .campaign{
+                .campaign__content{
                     padding-left: 23px;
 
                     .text{
