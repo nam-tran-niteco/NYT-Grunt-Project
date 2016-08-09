@@ -12,7 +12,7 @@
     padding: 0
 }
 
-/*-- top-bottom-block --*/
+/*-- top-footer-block --*/
 .top-footer-block {
     background: #68757d;
 
@@ -37,14 +37,14 @@
         margin-bottom: rem(30px);
         border-bottom: 1px solid #77838a;
         font-size: 0;
-
+        height: 225px;
 
         .footer-link {
             display: inline-block;
             vertical-align: top;
             overflow: hidden;
             border-right: 1px solid #77838a;
-            height: 180px;
+            height: 195px;
             &:last-child{
                 border-right: none;
             }
@@ -131,7 +131,7 @@
             }
 
             @include respond-to-min($largeSize) {
-                padding-right: 2.5%;
+                padding-right: 2.3%;
                 padding-left: 2%;
 
                 &:last-child {
@@ -194,135 +194,37 @@
             border-bottom: rem(1px solid #77838a);
         }
     }
-
-    .copyright-section {
-        border-top: rem(1px solid #77838a);
-        padding: rem(25px 15px);
-        text-align: center;
-
-        .policy-menu, .external-footer-menu {
-            padding: 0;
-            margin: 0;
-
-            li {
-                @include inline-block();
-                margin-left: rem(20px);
-
-                a {
-                    color: #fff;
-                    text-decoration: none;
-                    @include raleMedium();
-                    &:hover {
-                        color: #d4d4d4;
-                    }
-                }
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-
-        .policy-menu {
-            margin-bottom: rem(25px);
-
-            @include respond-to-min($tabletSize) {
-                margin: 0;
-            }
-        }
-
-        p {
-            color: #d4d4d4;
-            @include arial();
-            font-size: rem(14px);
-            margin: 0;
-        }
-
-        @include respond-to-min($tabletSize) {
-            padding: rem(25px 30px 20px 15px);
-            text-align: right;
-        }
-
-        @include respond-to-min($desktopSize) {
-        }
-
-        @include respond-to-min($laptopSize) {
-            padding: rem(45px 40px 25px);
-            border-top: 0;
-            border-left: 0;
-        }
-    }
 }
 
 
 
-/*-- top-bottom-block --*/
-.top-footer-block {
-    background: #68757d;
-
-    .no-gutter-right {
-        include respond-to-min($tabletSize) {
-        }
-
-        @include respond-to-min($desktopSize) {
-            
-        }
-
-        @include respond-to-min($laptopSize) {
-        }
-    }
-
-    .no-gutter {
-        padding: 0;
-    }
-
-    .footer-navigation {
-        padding: rem(30px 15px 0);
-        margin-bottom: rem(30px);
-        border-bottom: 1px solid #77838a;
-        font-size: 0;
-
-
-        .footer-link {
-            display: inline-block;
-            vertical-align: top;
-            overflow: hidden;
-            border-right: 1px solid #77838a;
-            height: 180px;
-            &:last-child{
-                border-right: none;
-            }
-            h3 {
-                a {
-                    @include raleBlack();
-                    font-weight: bold;
-                    color: #fff;
-                    margin-bottom: rem(5px);
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    display: inline-block;
-                }
-            }
-
-            .footer-menu {
-                margin-bottom: rem(30px);
-                padding: 0;
-                margin-top: 0;
-
-                li {
-                    list-style: none;
-
+/*-- footer-bottom-block --*/
+.bottom-footer-block {
+    .bottom-1{
+        height: 80px;
+        .footer-navigation {
+            .footer-link {
+                display: inline-block;
+                vertical-align: top;
+                overflow: hidden;   
+                border-right: none;         
+                h3 {
                     a {
-                        @include raleMedium();
-                        color: #d4d4d4;
+                        @include raleBlack();
+                        font-weight: bold;
+                        color: #fff;
+                        margin-bottom: rem(5px);
+                        text-transform: uppercase;
                         text-decoration: none;
-
-                        &:hover {
-                            color: #fff;
-                        }
+                        display: inline-block;
                     }
                 }
             }
+           
         }
     }
+
+
+
+
 }

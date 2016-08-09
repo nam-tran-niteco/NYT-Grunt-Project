@@ -37,10 +37,15 @@
 
 @mixin raleBlack(){
     font-family: 'Raleway Black';
-    font-size: rem(18px);
+    font-size: rem(17px);
 }
 
 @mixin raleMedium(){
     font-family: 'Raleway Medium';
     font-size: rem(15px);
+}
+
+@mixin raleLight(){
+  font-family: 'Raleway Light';
+  font-size: rem(66px);
 }
