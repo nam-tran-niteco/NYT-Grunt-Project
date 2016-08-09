@@ -1,34 +1,36 @@
 ---
 title: "top navigation desktop"
 ---
-
-<div class="top-navigation-container">
-    <ul class="top-navigation">
-        {{#each top_menu.items}}
-        <li class="top-navigation__item">
-            <a href="{{this.url}}" class="top-navigation__item__content">
-                <img src="{{this.image}}" />
-                <img class="active" src="{{this.imageActive}}" />
-                <span>{{this.text}}</span>
-            </a>
-        </li>
-        {{/each}}
-        <li class="top-navigation__item top-navigation__item-desktop-only">
-            <a href="#" class="top-navigation__item__content">
-                <span>contact</span>
-            </a>
-        </li>
-        <li class="top-navigation__item top-navigation__item-desktop-only">
-            <a href="#" class="top-navigation__item__content">
-                <span>about</span>
-            </a>
-        </li>
-    </ul>
-    
-    <div class="top-navigation-right">
-        <span class="top-navigation-right__phone">
-            <strong>800 Motors</strong> (668677)
-        </span>
-        <a href="#" class="top-navigation-right__language">Language</a>
+<div class="navigation-wrapper">
+    <div class="top-navigation-container">
+        <ul class="top-navigation">
+            
+            <li class="top-navigation__item top-navigation__item-desktop-only">
+                <a href="#" class="top-navigation__item__content">
+                    <span>Media Centre</span>
+                </a>
+            </li>
+            <li class="top-navigation__item top-navigation__item-desktop-only">
+                <a href="#" class="top-navigation__item__content">
+                    <span>Carrers</span>
+                </a>
+            </li>
+            <li class="top-navigation__item top-navigation__item-desktop-only">
+                <a href="#" class="top-navigation__item__content">
+                    <span>Learning & Development</span>
+                </a>
+            </li>
+            <li class="top-navigation__item top-navigation__item-desktop-only">
+                <a href="#" class="top-navigation__item__content">
+                    <span>Contact Us</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="top-navigation-right">
+            <span class="top-navigation-right__nbad">
+                Al-Futtaim NBAD Credit Card
+            </span>
+            <a href="#" class="top-navigation-right__shop">Shop online</a>
+        </div>
     </div>
-</div>

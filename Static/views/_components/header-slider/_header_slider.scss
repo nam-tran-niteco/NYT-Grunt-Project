@@ -2,7 +2,7 @@
 /*-- header slider --*/
 .header-slider {
     position: relative;
-    background-color: #666a6c;
+    
     min-height: rem(200px);
 
     @include respond-to-min($tabletSize) {
@@ -21,7 +21,7 @@
     &__item {
         position: relative;
         width: 100%;
-        font-size: 0;
+        font-size: rem(22px);
         opacity: 0;
         display: none;
 
@@ -43,33 +43,7 @@
             z-index: 0;
         }
 
-        &__video {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            overflow: hidden;
-            display: none;
-
-            @include respond-to-min($desktopSize) {
-                display: block;
-            }
-
-            video {
-                opacity: 0;
-            }
-
-            .vjs-big-play-button, .vjs-control-bar, .vjs-error-display {
-                display: none !important;
-            }
-
-            .vjs-controls-disabled .vjs-big-play-button, .vjs-using-native-controls .vjs-big-play-button, .vjs-loading-spinner, .vjs-poster {
-                display: none;
-            }
-        }
-
+        
         &__text {
             z-index: 2;
             position: relative;
@@ -91,15 +65,15 @@
 
             @include respond-to-min($desktopSize) {
                 left: rem(80px);
-                width: rem(520px);
+                bottom: rem(200px);
+                width: 53rem;
             }
 
             h3 {
-                @include latoBold();
+                @include raleLight();
                 color: #fff;
-                text-transform: capitalize;
+                text-transform: uppercase;
                 letter-spacing: rem(3px);
-                font-size: rem(33px);
                 line-height: rem(33px);
                 margin: rem(0 0 10px);
                 opacity: 0;
@@ -111,33 +85,11 @@
                 }
 
                 @include respond-to-min($desktopSize) {
-                    font-size: rem(56px);
-                    line-height: rem(56px);
+                    line-height: 4.5rem;
+                    font-size: 66px;
                 }
             }
 
-            p {
-                @include latoLight();
-                color: #fff;
-                width: 80%;
-                font-size: rem(16px);
-                line-height: rem(18px);
-                margin: rem(0 0 18px);
-                letter-spacing: rem(1px);
-                opacity: 0;
-
-                @include respond-to-min($tabletSize) {
-                    margin: rem(0 0 30px);
-                    font-size: rem(20px);
-                    line-height: rem(22px);
-                }
-
-                @include respond-to-min($desktopSize) {
-                    margin: rem(0 0 35px);
-                    font-size: rem(22px);
-                    line-height: rem(25px);
-                }
-            }
 
             .header-button-container {
                 font-size: 0;
@@ -147,7 +99,7 @@
                     text-decoration: none;
                     color: #fff;
                     @include latoBlack();
-                    font-size: rem(12px);
+                    font-size: rem(16px);
                     line-height: rem(20px);
                     text-transform: uppercase;
                     border: 1px solid #fff;
@@ -340,10 +292,31 @@
                 }
             }
         }
+        &__ticker{
+            background: #ffffff;
+            margin-left: 80px;
+            margin-right: 80px;
+            height: 100px;
+            bottom: 50px;
+            position: absolute;
+            h2{
+                text-transform: uppercase;
+                line-height: rem(45px);
+                height:45px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            p{
+                line-height: rem(45px);
+                height:45px;
+                padding-left: 60px;
+            }
+        }
     }
 
 
     .owl-dots {
+    display: none;
         position: absolute;
         margin: 0;
         width: 100%;
