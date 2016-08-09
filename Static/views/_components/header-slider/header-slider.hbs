@@ -30,16 +30,22 @@ title: "Header Slider"
                     {{/if}}
                 </div>
             </div>
-            <div class="header-slider__item__ticker">
-            <div class = "row">
-                <div class="col-md-2 col-lg-2 heading">
-                {{#if this.head}}
-                    <h2>{{head}}</h2>
-                {{/if}}
-                </div>
-                <div class = "col-md-10 col-lg-10 content">
-                    <p>{{ticker}}</p>
 
+            <div class="header-slider__item__ticker">
+                <div class = "row">
+                    <div class="col-md-2 col-lg-2 heading">
+                        <h2>{{head}}</h2>
+                    </div>
+                    <div class="col-md-8 col-lg-8 content">
+                        <p>{{ticker}}</p>
+
+                    </div>
+                    <div class="col-md-2 col-lg-2 arrow">
+                        <a class="swiper-button-prev">
+                        </a>
+                        <a class="swiper-button-next">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
