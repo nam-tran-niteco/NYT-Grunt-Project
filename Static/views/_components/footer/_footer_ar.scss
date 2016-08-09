@@ -98,8 +98,22 @@
                 }
             
             }
-
-            
+            .social-icons{
+                float: right;
+                ul{
+                    li{
+                        float: left;
+                        padding-right: 30px;
+                        a{
+                            i{
+                                font-size: 40px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+          
         }
     }
 

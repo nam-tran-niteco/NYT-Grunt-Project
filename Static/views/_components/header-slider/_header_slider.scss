@@ -378,59 +378,6 @@
     }
 
 
-    .owl-dots {
-        display: none;
-        position: absolute;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-
-        @include respond-to-min($tabletSize) {
-            width: auto;
-            bottom: 8.8%;
-            margin-bottom: rem(8px);
-            right: rem(30px);
-            transform: translate(0, 0);
-        }
-
-        @include respond-to-min($desktopSize) {
-            right: rem(80px);
-        }
-
-        .owl-dot {
-            @include latoBold();
-            color: #fff;
-            border-radius: rem(3px);
-            margin: rem(0 0 0 10px);
-            border: rem(1px solid #b1b2ad);
-            font-size: rem(12px);
-            padding: rem(4px 10px);
-
-            &:nth-child(1) {
-                margin-left: 0;
-            }
-
-            @include respond-to-min($tabletSize) {
-                font-size: rem(14px);
-                padding: rem(6px 13px);
-            }
-
-            &:hover{
-                color: #fff;
-                background-color: $blueTextColor;
-                border-color: $blueTextColor;
-            }
-
-            &.active {
-                color: $blueTextColor;
-                background-color: #fff;
-                &:hover {
-                    border-color: #b1b2ad;
-                }
-            }
-        }
-    }
-
     &__arrow {
         z-index: 10;
         position: absolute;

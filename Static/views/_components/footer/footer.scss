@@ -154,46 +154,7 @@
         }
     }
 
-    .social-sharing {
-        border-top: rem(1px solid #77838a);
-        font-size: 0;
-
-        a {
-            display: inline-block;
-            vertical-align: middle;
-            height: rem(50px);
-            width: 25%;
-            text-align: center;
-            color: #fff;
-            font-size: rem(30px);
-
-            @include respond-to-min($tabletSize) {
-                height: rem(95px);
-            }
-
-            i {
-                line-height: rem(50px);
-                width: 100%;
-                border-right: rem(1px solid #77838a);
-                display: block;
-
-                @include respond-to-min($tabletSize) {
-                    line-height: rem(95px);
-                }
-            }
-
-            &:hover {
-                color: #d4d4d4;
-            }
-        }
-
-        @include respond-to-min($desktopSize) {
-        }
-
-        @include respond-to-min($laptopSize) {
-            border-bottom: rem(1px solid #77838a);
-        }
-    }
+    
 }
 
 
@@ -222,9 +183,7 @@
             }
            
         }
+        
     }
-
-
-
 
 }
