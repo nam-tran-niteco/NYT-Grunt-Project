@@ -1,0 +1,30 @@
+{
+    "title_content": "Al-Futtaim is one of the most progressive regional business houses headquartered in Dubai, United Arab Emirates.",
+    
+    "items":[
+        {
+            "url": "#",
+            "icon_url": "/img/icons/figures-container-1.png",
+            "count": "45,000",
+            "content": "multi-cultural employees"
+        },
+        {
+            "url": "#",
+            "icon_url": "/img/icons/figures-container-2.png",
+            "count": "215",
+            "content": "companies"
+        },
+        {
+            "url": "#",
+            "icon_url": "/img/icons/figures-container-3.png",
+            "count": "85",
+            "content": "years"
+        },
+        {
+            "url": "#",
+            "icon_url": "/img/icons/figures-container-4.png",
+            "count": "32",
+            "content": "countries"
+        }
+    ]
+}

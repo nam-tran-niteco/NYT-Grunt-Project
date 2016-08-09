@@ -1,0 +1,28 @@
+---
+title: "Figures Container"
+---
+
+<div class="figures-container">
+    <div class="container">
+        <div class="row">
+            {{#with figures-container}}
+            <div class="title-content">
+                <p>{{this.title_content}}</p>
+            </div>
+            <div class="col-sm-12">
+                <ul class="figures__list">
+                    {{#each this.items}}
+                        <li class="figure col-lg-3">
+                            <span>
+                                <span class="figure__icon"><img src="{{this.icon_url}}"></span>
+                                <span class="figure__number">{{this.count}}</span>
+                            </span>
+                            <h4>{{this.content}}</h4>
+                        </li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/with}}
+        </div>
+    </div>
+</div>
