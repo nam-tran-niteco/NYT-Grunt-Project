@@ -24,9 +24,12 @@
 
 	&__header {
 		@extend %position-absolute;
-		left: 60px;
+		@include ralewayNormal;
+		left: 50px;
 		top: 30px;
-		color: blue;
+		color: #1364ad;
+		font-size: 26px;
+		font-weight: 400;
 	}
 
 	&__img {
@@ -35,12 +38,30 @@
 
 	&__description {
 	    @extend %position-absolute;
+	    @include ralewayNormal;
 	    left: 240px;
 	    top: 80px;
 	    width: 45%;
+	    color: #1c1c1b;
+	    font-size: 16px;
+	    font-weight: 400;
 	}
 
-	&__link a {
-		text-transform: uppercase;
+	&__link {
+		a {
+			@include ralewayBlack;
+			text-transform: uppercase;
+			color: #094c97;
+			font-size: 15px;
+			font-weight: 900;
+			margin-left: 5px;
+		}
+
+		span {
+			color: #094c97;
+			border-color: #094c97;
+			width: 35px;
+			line-height: 31px;
+		}
 	}
 }

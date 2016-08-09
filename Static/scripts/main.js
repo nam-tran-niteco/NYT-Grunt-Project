@@ -11,9 +11,12 @@ define(['jquery', 'underscore', 'base/modules/jitRequire', 'vendor/fastclick', '
 $('#brand-logos').owlCarousel({
     dots: false,
     nav: true,
-    navText: ['<span class="glyphicon glyphicon-chevron-left arrow-circle" aria-hidden="true"></span>','<span class="glyphicon glyphicon-chevron-right arrow-circle" aria-hidden="true"></span>']
+    navText: [
+        '<span class="glyphicon glyphicon-chevron-left arrow-circle" aria-hidden="true"></span>',
+        '<span class="glyphicon glyphicon-chevron-right arrow-circle" aria-hidden="true"></span>'
+    ],
     responsive: {
-        0:{
+        0: {
 			items: 1
         },
         600: {

@@ -6,7 +6,16 @@
 	&__top {
 		height: 400px;
 		padding-top: 65px;
+		margin-bottom: 20px;
 		text-align: center;
+
+		p {
+			@include ralewayNormal;
+			color: #414141;
+			font-size: 22px;
+			font-weight: 400;
+			padding: 0 10px;
+		}
 	}
 
 	&__bottom {
@@ -27,15 +36,24 @@
 	width: 25%;
 
 	&__link {
+		@include ralewayBlack;
+		font-size: 16px;
+		font-weight: 900;
 		text-align: center;
 		padding-top: 20px !important;
 		padding-bottom: 60px !important;
 		text-transform: uppercase;
 		margin-right: 0 !important;
+		color: #084c96;
 
 		&:hover {
 			background-color: #fff !important;
-			color: #000;
+			color: #084c96;
+		}
+
+		li.active & {
+			background-color: #fff !important;
+			color: #303030 !important;
 		}
 	}
 
@@ -53,6 +71,33 @@
 		.nav-pills {
 			margin-bottom: 20px;
 		}
+
+		.owl-prev,
+		.owl-next {
+			@extend %position-absolute;
+			color: black !important;
+			font-size: 22px !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			background-color: transparent !important;
+
+			span {
+				width: 60px;
+				line-height: 56px;
+				border-color: #cbcbcb;
+				color: #094c97;
+			}
+		}
+
+		.owl-prev {
+			top: 60px;
+			left: -70px;
+		}
+
+		.owl-next {
+			top: 60px;
+			right: -70px;
+		}
 	}
 }
 
@@ -60,18 +105,21 @@ li.brand-sub-category {
 	margin: 0;
 
 	a {
+		@include ralewayNormal;
 		border-radius: 0 !important;
 		background-color: #e7eff6 !important;
-		color: blue !important;
+		color: #084c96 !important;
 		text-align: center;
 		border: 1px solid #ccc;
 		height: 70px;
 		line-height: 70px;
 		padding: 0;
+		font-size: 16px;
+		font-weight: 600;
 
 		&:hover {
 			background-color: #fff !important;
-			color: #000 !important;
+			color: #333333 !important;
 		}
 	}
 
@@ -85,7 +133,27 @@ li.brand-sub-category {
 
 	&.active a {
 		background-color: #fff !important;
-		color: #000 !important;
+		color: #333333 !important;
+	}
+}
+
+.brand-sub-category {
+	&__footer {
+		.button-arrow-right {
+			background-color: #094c97 !important;
+		}
+
+		a {
+			@include ralewayBlack;
+			font-size: 16px;
+			font-weight: 900;
+			color: #fff !important;
+
+			&:hover {
+				color: #094c97 !important;
+				background-color: #fff !important;
+			}
+		}
 	}
 }
 
