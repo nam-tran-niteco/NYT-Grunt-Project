@@ -8,7 +8,8 @@ define(['jquery', 'underscore', 'base/modules/jitRequire', 'vendor/fastclick', '
         pageScrollAnimation.init($(document));
     });
 
-$('#brand-logos').owlCarousel({
+$('.brand-logos').owlCarousel({
+    items: 1,
     dots: false,
     nav: true,
     navText: [
