@@ -12,6 +12,32 @@
             "head": "news",
             "ticker": "Toyota Dream Car Art Contest doubles participation in 2016 and announces UAE winners"
             
+        },
+        {
+            "text": "Entrepreneurship and customer focus is the backbone of the Al-Futtaim business",
+            "textButton1": "Discover the group",
+            "textButton1Mobile": "More",
+            "urlButton1": "#",
+            "urlButton2": "#",
+            "largeImage": "/img/header_slider_image1.jpg",
+            "desktopImage": "/img/header_slider_image1.jpg",
+            "tabletImage": "/img/header_slider_image1.jpg",
+            "head": "news",
+            "ticker": "ABCDEFGHIJKLMNOPQRSTU"
+            
+        },
+        {
+            "text": "Entrepreneurship and customer focus is the backbone of the Al-Futtaim business",
+            "textButton1": "Discover the group",
+            "textButton1Mobile": "More",
+            "urlButton1": "#",
+            "urlButton2": "#",
+            "largeImage": "/img/header_slider_image1.jpg",
+            "desktopImage": "/img/header_slider_image1.jpg",
+            "tabletImage": "/img/header_slider_image1.jpg",
+            "head": "news",
+            "ticker": "Dreaming Future Yamaha"
+            
         }
         
     ]
