@@ -16,7 +16,7 @@
 			position: relative;
 
 			& #brand-tabs {
-				position: absolute;
+				@extend %position-absolute;
 				top: -200px;
 			}
 		}
@@ -48,40 +48,44 @@
 
 	&__body {
 		margin-top: 50px;
+		height: 450px;
 
-		& .nav-pills {
+		.nav-pills {
 			margin-bottom: 20px;
 		}
+	}
+}
 
-		& .nav-pills li {
-			margin: 0;
+li.brand-sub-category {
+	margin: 0;
 
-			& a {
-				border-radius: 0;
-				background-color: #e7eff6;
-				color: blue;
-				text-align: center;
-				border: 1px solid #ccc;
-				height: 70px;
-				line-height: 70px;
-				padding: 0;
+	a {
+		border-radius: 0 !important;
+		background-color: #e7eff6 !important;
+		color: blue !important;
+		text-align: center;
+		border: 1px solid #ccc;
+		height: 70px;
+		line-height: 70px;
+		padding: 0;
 
-				&:hover {
-					background-color: #fff;
-					color: #000;
-				}
-
-			}
-
-			&.active > a {
-				background-color: #fff;
-				color: #000;
-			}
-
-			&+li > a{
-				border-left: 0;
-			}
+		&:hover {
+			background-color: #fff !important;
+			color: #000 !important;
 		}
+	}
+
+	&+li {
+		margin-left: 0 !important;
+
+		a {
+			border-left: 0 !important;
+		}
+	}
+
+	&.active a {
+		background-color: #fff !important;
+		color: #000 !important;
 	}
 }
 

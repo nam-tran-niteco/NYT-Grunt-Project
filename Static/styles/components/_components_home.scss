@@ -1,0 +1,53 @@
+
+// Common styles
+
+a {
+	text-decoration: none;
+
+	&:hover,
+	&:active,
+	&:visited,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.arrow-circle {
+	width: 30px;
+	line-height: 26px;
+	border-radius: 50%;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.button-arrow-right {
+	border-radius: 8px;
+	display: inline-block;
+	background-color: blue;
+	color: white;
+
+	span,
+	a {
+		text-align: center;
+		padding: 18px;
+	}
+
+	span {
+		border-right: 1px solid white;
+	}
+
+	a {
+		text-transform: uppercase;
+	}
+}
+
+// Extends
+
+%full-width {
+	width: 100%;
+}
+
+%position-absolute {
+	position: absolute;
+	z-index: 2;
+}

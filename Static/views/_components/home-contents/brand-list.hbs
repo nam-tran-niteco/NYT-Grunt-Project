@@ -29,7 +29,7 @@ title: "Brand List"
 				<div class="tab-pane active" id="{{this.id}}" role="tabpanel">
 					<ul class="nav nav-pills">
 						{{#each this.subCategory}}
-						<li class="{{#if @first}}active {{/if}}col-subtab-{{../subCategory.length}}">
+						<li class="{{#if @first}}active {{/if}}col-subtab-{{../subCategory.length}} brand-sub-category">
 							<a data-toggle="pill" href="#{{this.control}}">{{this.title}}</a>
 						</li>
 						{{/each}}
@@ -47,8 +47,10 @@ title: "Brand List"
 								{{/each}}
 							</div>
 							<div class="brand-sub-category__footer text-center">
-								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-								<a href="{{this.exploreButton.link}}" class="button button--primary icon icon--right">{{this.exploreButton.title}}</a>
+								<div class="button-arrow-right">
+									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									<a href="{{this.exploreButton.link}}">{{this.exploreButton.title}}</a>
+								</div>
 							</div>
 						</div>
 						{{/each}}

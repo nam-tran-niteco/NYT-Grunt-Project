@@ -1,20 +1,7 @@
-
-// Extends
-
-%full-width {
-	width: 100%;
-}
-
-%position-absolute {
-	position: absolute;
-	z-index: 2;
-}
-
 .bottom-cta {
 	@extend %full-width;
 	background-color: #199fe0;
 }
-
 
 .bottom-cta .row {
 	margin: 50px 0;
@@ -43,7 +30,7 @@
 	}
 
 	&__img {
-		width: 100%;
+		@extend %full-width;
 	}
 
 	&__description {
