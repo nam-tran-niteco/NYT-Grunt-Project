@@ -4,7 +4,6 @@
     display: none;
     width: 100%;
     z-index: 10;
-    /*background-color: #fefefe;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,2989d8+100,207cca+100,f0f0f1+100&amp;0.9+0,1+100,0.9+100 */
     background: -moz-linear-gradient(top, rgba(254,254,254,0.9) 0%, rgba(240,240,241,0.9) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,254,0.9)), color-stop(100%,rgba(240,240,241,0.9))); /* Chrome,Safari4+ */
@@ -182,7 +181,10 @@
             }
 
             a {
+                @include raleBlack();
                 display: inline-block;
+                font-size: rem(19px);
+                font-weight: bold;
                 border-left: 1px solid #dcdce2;
                 text-decoration: none;
                 color: $blueTextColor;
@@ -190,7 +192,6 @@
                 height: rem(49px);
                 letter-spacing: rem(1px);
                 word-spacing: rem(2px);
-                @include latoBold();
 
                 &:hover {
                     color: $orangeActiveMenu;

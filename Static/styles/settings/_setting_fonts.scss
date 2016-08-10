@@ -49,10 +49,25 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 @mixin ralewayNormal(){
     font-family: 'RalewayRegular', sans-serif;
 }
 
 @mixin ralewayBlack(){
     font-family: 'RalewayBlack', sans-serif;
+
+@mixin raleBlack(){
+    font-family: 'Raleway Black';
+    font-size: rem(17px);
+}
+
+@mixin raleMedium(){
+    font-family: 'Raleway Medium';
+    font-size: rem(15px);
+}
+
+@mixin raleLight(){
+  font-family: 'Raleway Light';
+  font-size: rem(66px);
 }
