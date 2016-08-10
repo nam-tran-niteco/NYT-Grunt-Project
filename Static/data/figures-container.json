@@ -5,25 +5,29 @@
         {
             "url": "#",
             "icon_url": "/img/icons/figures-container-1.png",
-            "count": "45,000",
+            "count": 45000,
+            "count_text": "45,000",
             "content": "multi-cultural employees"
         },
         {
             "url": "#",
             "icon_url": "/img/icons/figures-container-2.png",
             "count": "215",
+            "count_text": "215",
             "content": "companies"
         },
         {
             "url": "#",
             "icon_url": "/img/icons/figures-container-3.png",
             "count": "85",
+            "count_text": "85",
             "content": "years"
         },
         {
             "url": "#",
             "icon_url": "/img/icons/figures-container-4.png",
             "count": "32",
+            "count_text": "32",
             "content": "countries"
         }
     ]

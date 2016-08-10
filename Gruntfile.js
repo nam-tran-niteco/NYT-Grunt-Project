@@ -85,6 +85,7 @@ module.exports = function (grunt) {
                     '<%= project.dirs.scripts.bower %>/jquery.validate.js': 'jquery-validation/dist/jquery.validate.js',
                     '<%= project.dirs.scripts.bower %>/jquery.validate.additional.js': 'jquery-validation/dist/additional-methods.js',
                     '<%= project.dirs.scripts.bower %>/underscore.js': 'underscore/underscore.js',
+                    '<%= project.dirs.scripts.bower %>/waypoints.js': 'waypoints/lib/jquery.waypoints.js',
                     //'<%= project.dirs.scripts.bower %>/handlebars.js': 'handlebars/handlebars.js',
                     //'<%= project.dirs.scripts.bower %>/handlebars-helpers.js': 'handlebars-helpers/src/helpers.js',
                     //'<%= project.dirs.scripts.bower %>/async.js': 'requirejs-plugins/src/async.js',

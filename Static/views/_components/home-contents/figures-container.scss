@@ -14,20 +14,20 @@
         margin: 35px 0 50px;
         padding: 0;
 
-        .figures__list{
+        &__list{
             list-style: none;
             margin: 0;
             padding: 0;
 
             .figure{
                 
-                .figure__item{
+                &__item{
                     display: block;
                     text-align: center;
                     font-size: 55px;
                     @include ralewayBlack();
 
-                    .figure__icon{
+                    &__icon{
                         display: inline-block;
                         $icon_size: 55px;
                         width: $icon_size;
