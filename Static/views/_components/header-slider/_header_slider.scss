@@ -2,7 +2,7 @@
 /*-- header slider --*/
 .header-slider {
     position: relative;
-    background-color: #666a6c;
+    
     min-height: rem(200px);
 
     @include respond-to-min($tabletSize) {
@@ -21,7 +21,7 @@
     &__item {
         position: relative;
         width: 100%;
-        font-size: 0;
+        font-size: rem(22px);
         opacity: 0;
         display: none;
 
@@ -43,33 +43,7 @@
             z-index: 0;
         }
 
-        &__video {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            overflow: hidden;
-            display: none;
-
-            @include respond-to-min($desktopSize) {
-                display: block;
-            }
-
-            video {
-                opacity: 0;
-            }
-
-            .vjs-big-play-button, .vjs-control-bar, .vjs-error-display {
-                display: none !important;
-            }
-
-            .vjs-controls-disabled .vjs-big-play-button, .vjs-using-native-controls .vjs-big-play-button, .vjs-loading-spinner, .vjs-poster {
-                display: none;
-            }
-        }
-
+        
         &__text {
             z-index: 2;
             position: relative;
@@ -91,15 +65,15 @@
 
             @include respond-to-min($desktopSize) {
                 left: rem(80px);
-                width: rem(520px);
+                bottom: 18.5rem;
+                width: 53rem;
             }
 
             h3 {
-                @include latoBold();
+                @include raleLight();
                 color: #fff;
-                text-transform: capitalize;
+                text-transform: uppercase;
                 letter-spacing: rem(3px);
-                font-size: rem(33px);
                 line-height: rem(33px);
                 margin: rem(0 0 10px);
                 opacity: 0;
@@ -111,33 +85,11 @@
                 }
 
                 @include respond-to-min($desktopSize) {
-                    font-size: rem(56px);
-                    line-height: rem(56px);
+                    line-height: 4.5rem;
+                    font-size: 66px;
                 }
             }
 
-            p {
-                @include latoLight();
-                color: #fff;
-                width: 80%;
-                font-size: rem(16px);
-                line-height: rem(18px);
-                margin: rem(0 0 18px);
-                letter-spacing: rem(1px);
-                opacity: 0;
-
-                @include respond-to-min($tabletSize) {
-                    margin: rem(0 0 30px);
-                    font-size: rem(20px);
-                    line-height: rem(22px);
-                }
-
-                @include respond-to-min($desktopSize) {
-                    margin: rem(0 0 35px);
-                    font-size: rem(22px);
-                    line-height: rem(25px);
-                }
-            }
 
             .header-button-container {
                 font-size: 0;
@@ -147,7 +99,7 @@
                     text-decoration: none;
                     color: #fff;
                     @include latoBlack();
-                    font-size: rem(12px);
+                    font-size: rem(16px);
                     line-height: rem(20px);
                     text-transform: uppercase;
                     border: 1px solid #fff;
@@ -340,60 +292,91 @@
                 }
             }
         }
-    }
-
-
-    .owl-dots {
-        position: absolute;
-        margin: 0;
-        width: 100%;
-        text-align: center;
-
-        @include respond-to-min($tabletSize) {
-            width: auto;
-            bottom: 8.8%;
-            margin-bottom: rem(8px);
-            right: rem(30px);
-            transform: translate(0, 0);
-        }
-
-        @include respond-to-min($desktopSize) {
-            right: rem(80px);
-        }
-
-        .owl-dot {
-            @include latoBold();
-            color: #fff;
-            border-radius: rem(3px);
-            margin: rem(0 0 0 10px);
-            border: rem(1px solid #b1b2ad);
-            font-size: rem(12px);
-            padding: rem(4px 10px);
-
-            &:nth-child(1) {
-                margin-left: 0;
-            }
-
-            @include respond-to-min($tabletSize) {
-                font-size: rem(14px);
-                padding: rem(6px 13px);
-            }
-
-            &:hover{
-                color: #fff;
-                background-color: $blueTextColor;
-                border-color: $blueTextColor;
-            }
-
-            &.active {
-                color: $blueTextColor;
-                background-color: #fff;
-                &:hover {
-                    border-color: #b1b2ad;
+        &__ticker{
+            height: 100px;
+            bottom: 55px;
+            width: 100%;
+            position: absolute;
+            .row{
+                background: #ffffff;
+                margin-right: 80px;
+                margin-left: 80px;
+                .heading{
+                    border-right: 1px solid #e6e6e6;
+                }
+                .heading:before{
+                    content:'';
+                    width: 0;
+                    height: 0;
+                    border-top: 12px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    border-left: 12px solid #fff;
+                    position: absolute;
+                    top: 50%;
+                    right: -12px;
+                    margin-top: -12px;
+                    z-index: 1;
+                }
+                .heading:after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: -13px;
+                    margin-top: -13px;
+                    border-top: 13px solid transparent;
+                    border-bottom: 13px solid transparent;
+                    border-left: 13px solid #c8c8c7;
+                    z-index: 0;
+                }
+                h2{
+                    text-transform: uppercase;
+                    line-height: rem(45px);
+                    height:45px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                p{
+                    line-height: rem(45px);
+                    height:45px;
+                    padding-left: 60px;
+                }
+                .arrow{
+                    right: 0px;
+                    a{
+                        width: 16px;
+                        height: 16px;
+                        background-size: 16px 16px;
+                        transform: translateY(-50%);
+                        margin-top: 0;
+                        border: 1px solid #c8c8c7;
+                        padding: 24px;
+                        border-radius: 100%;
+                        text-decoration: none;
+                    }
+                    .swiper-button-prev, .swiper-button-next {
+                        background-image: url('/img/prev_arrow.png');
+                        position: absolute;
+                        top: 50%;
+                        z-index: 10;
+                        top: 45px;
+                        cursor: pointer;
+                        background-size: 16px 16pxpx;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .swiper-button-prev{
+                        left: 115px;
+                    }
+                    .swiper-button-next{
+                        background-image: url('/img/next_arrow.png');
+                        right: 25px;
+                    }
                 }
             }
         }
     }
+
 
     &__arrow {
         z-index: 10;
