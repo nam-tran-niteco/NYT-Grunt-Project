@@ -228,6 +228,28 @@
 				},
 				{
 					"id": "rental-leasing",
+					"brandList": [
+						{
+							"imageSource": "/img/Hertz_logo.jpg",
+							"link": "#",
+							"imageTitle": "HERTZ"
+						},
+						{
+							"imageSource": "/img/AVR_logo.jpg",
+							"link": "#",
+							"imageTitle": "AL-FUTTAIM VEHICLE RENTALS"
+						},
+						{
+							"imageSource": "/img/firefly_logo.jpg",
+							"link": "#",
+							"imageTitle": "FIREFLY"
+						},
+						{
+							"imageSource": "/img/Thrifty_logo.jpg",
+							"link": "#",
+							"imageTitle": "THRIFTY RENTAL CAR - OMAN"
+						}
+					],
 					"exploreButton": {
 						"link": "#",
 						"title": "Explore Rental & Leasing"

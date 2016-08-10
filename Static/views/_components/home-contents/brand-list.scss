@@ -30,14 +30,6 @@
 			}
 		}
 	}
-
-	// .owl-item {
-	// 	width: 234px !important;
-	// }
-
-	// .owl-stage {
-	// 	width: 2106px !important;
-	// }
 }
 
 .brand-category {
@@ -178,4 +170,16 @@ li.brand-sub-category {
 	&-4 {
 		width: 25%;
 	}
+}
+
+.tab-content > .tab-pane {
+	display: block;
+    visibility: hidden !important;
+    height: 0px !important;
+    overflow:hidden !important;
+}
+.tab-content > .active {
+    visibility: visible !important;
+    height: auto !important;
+    overflow: visible !important;
 }
