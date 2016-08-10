@@ -77,7 +77,7 @@
                 this.isLoop = this.$el.attr("data-slider-loop") && this.$el.attr("data-slider-loop") != "" ? this.$el.attr("data-slider-loop") == "true" ? true : false : false;
                 var option = {
                     items: 1,
-                    smartSpeed: 250,
+                    smartSpeed: 2000,
                     loop: this.isLoop,
                     autoplayTimeout: this.$el.attr("data-slider-speed") ? parseFloat(this.$el.attr("data-slider-speed")) * 1000 : 15000,
                     mouseDrag: false,

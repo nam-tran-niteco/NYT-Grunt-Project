@@ -99,6 +99,7 @@
             
             }
             .social-icons{
+                margin-top: 15px;
                 float: right;
                 ul{
                     li{
@@ -119,7 +120,7 @@
 
     .copyright-section {
         border-top: 1px solid #77838a;
-
+        padding-top: 10px;
         p{
             @include raleMedium();
             color: white;
