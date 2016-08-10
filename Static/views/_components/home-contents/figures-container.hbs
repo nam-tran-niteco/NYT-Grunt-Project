@@ -9,13 +9,13 @@ title: "Figures Container"
             <div class="title-content">
                 <p>{{this.title_content}}</p>
             </div>
-            <div class="col-sm-12">
+            <div class="figures col-sm-12">
                 <ul class="figures__list">
                     {{#each this.items}}
                         <li class="figure col-lg-3">
-                            <span>
+                            <span class="figure__item">
                                 <span class="figure__icon"><img src="{{this.icon_url}}"></span>
-                                <span class="figure__number">{{this.count}}</span>
+                                {{this.count}}
                             </span>
                             <h4>{{this.content}}</h4>
                         </li>

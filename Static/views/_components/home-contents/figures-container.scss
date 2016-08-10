@@ -10,22 +10,25 @@
         padding: 0 20%
     }
 
-    .figures__list{
-        list-style: none;
-        margin: 0;
+    .figures{
+        margin: 35px 0 50px;
         padding: 0;
 
-        .figure{
-            
-            > span{
-                display: block;
-                text-align: center;
+        .figures__list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
 
-                .figure{
-                    &__icon, &__number{
-                        display: inline-block
-                    }
-                    &__icon{
+            .figure{
+                
+                .figure__item{
+                    display: block;
+                    text-align: center;
+                    font-size: 55px;
+                    @include ralewayBlack();
+
+                    .figure__icon{
+                        display: inline-block;
                         $icon_size: 55px;
                         width: $icon_size;
                         height: $icon_size;
@@ -35,20 +38,14 @@
                             height: 100%
                         }
                     }
+                }
 
-                    &__number{
-                        @include ralewayBlack();
-                        font-size: 55px
-                    }
+                h4{
+                    font-weight: 100;
+                    font-size: 20px;
+                    text-align: center
                 }
             }
-
-            h4{
-                font-weight: 100;
-                font-size: 20px;
-                text-align: center
-            }
         }
-        
     }
 }
