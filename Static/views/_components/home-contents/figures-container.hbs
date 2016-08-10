@@ -13,9 +13,9 @@ title: "Figures Container"
                 <ul class="figures__list">
                     {{#each this.items}}
                         <li class="figure col-lg-3">
-                            <span class="figure__item item-{{@index}}" count={{this.count}}>
+                            <span class="figure__item" count={{this.count}}>
                                 <span class="figure__icon"><img src="{{this.icon_url}}"></span>
-                                {{this.count_text}}
+                                <i>{{this.count_text}}</i>
                             </span>
                             <h4>{{this.content}}</h4>
                         </li>
