@@ -2,20 +2,20 @@
 title: "Figures Container"
 ---
 
-<div class="figures-container">
+<div class="figures-container" data-require="base/views/figures-container">
     <div class="container">
         <div class="row">
             {{#with figures-container}}
             <div class="title-content">
                 <p>{{this.title_content}}</p>
             </div>
-            <div class="col-sm-12">
+            <div class="figures col-sm-12">
                 <ul class="figures__list">
                     {{#each this.items}}
                         <li class="figure col-lg-3">
-                            <span>
+                            <span class="figure__item" count={{this.count}}>
                                 <span class="figure__icon"><img src="{{this.icon_url}}"></span>
-                                <span class="figure__number">{{this.count}}</span>
+                                <i>{{this.count_text}}</i>
                             </span>
                             <h4>{{this.content}}</h4>
                         </li>
