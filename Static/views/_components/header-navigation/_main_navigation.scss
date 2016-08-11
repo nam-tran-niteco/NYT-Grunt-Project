@@ -229,6 +229,11 @@
                 letter-spacing: rem(1px);
                 word-spacing: rem(2px);
                 outline: none;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                height: 100%;
+                background: rgb(255, 255, 255);
             }
 
             .search-icon, .search-close {
