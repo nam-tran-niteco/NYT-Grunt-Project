@@ -79,7 +79,7 @@
                 }
 
                 animate(this.$el.find('.search-input'), {
-                    'width': width + 'px'
+                    'width': 1000 + 'px'
                 }, {
                     duration: 200,
                     easing: "linear"
