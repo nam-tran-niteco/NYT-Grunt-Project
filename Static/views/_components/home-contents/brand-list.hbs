@@ -37,13 +37,11 @@ title: "Brand List"
 					<div class="tab-content">
 						{{#each this.subCategoryContent}}
 						<div id="{{this.id}}" class="tab-pane{{#if @first}} active{{/if}}">
-							<div class="owl-carousel" id="brand-logos">
+							<div class="owl-carousel brand-logos">
 								{{#each this.brandList}}
-								<div class="item">
-									<a href="{{this.link}}">
-										<img src="{{this.imageSource}}" alt="brand-logo" class="img-responsive" title="{{this.imageTitle}}">
-									</a>
-								</div>
+								<a href="{{this.link}}">
+									<img src="{{this.imageSource}}" alt="brand-logo" title="{{this.imageTitle}}">
+								</a>
 								{{/each}}
 							</div>
 							<div class="brand-sub-category__footer text-center">

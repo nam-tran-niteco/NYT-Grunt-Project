@@ -127,6 +127,21 @@
 							"imageSource": "/img/TE-Dodge_5Jan2016-logo.jpg",
 							"link": "#",
 							"imageTitle": "DODGE"
+						},
+						{
+							"imageSource": "/img/volvo.jpg",
+							"link": "#",
+							"imageTitle": "VOLVO"
+						},
+						{
+							"imageSource": "/img/Nissan_logo-Website.jpg",
+							"link": "#",
+							"imageTitle": "NISSAN"
+						},
+						{
+							"imageSource": "/img/Suzuki_logo2.jpg",
+							"link": "#",
+							"imageTitle": "SUZUKI"
 						}
 					],
 					"exploreButton": {
@@ -136,6 +151,18 @@
 				},
 				{
 					"id": "logistics",
+					"brandList": [
+						{
+							"imageSource": "/img/AL-FUTTAIM-LOGISTICS_logo.jpg",
+							"link": "#",
+							"imageTitle": "AL-FUTTAIM LOGISTICS"
+						},
+						{
+							"imageSource": "/img/Select_Auto_logo.jpg",
+							"link": "#",
+							"imageTitle": "SELECT AUTO"
+						}
+					],
 					"exploreButton": {
 						"link": "#",
 						"title": "Explore Logistics"
@@ -143,6 +170,13 @@
 				},
 				{
 					"id": "manufacturing",
+					"brandList": [
+						{
+							"imageSource": "/img/Al-Ghazi-Tractors_logo.jpg",
+							"link": "#",
+							"imageTitle": "AL GHAZI TRACTORS"
+						}
+					],
 					"exploreButton": {
 						"link": "#",
 						"title": "Explore Manufacturing"
@@ -150,6 +184,43 @@
 				},
 				{
 					"id": "parts-body",
+					"brandList": [
+						{
+							"imageSource": "/img/PortablePower_logo.jpg",
+							"link": "#",
+							"imageTitle": "DOOSAN PORTABLE COMPRESSORS"
+						},
+						{
+							"imageSource": "/img/Fenner_logo.jpg",
+							"link": "#",
+							"imageTitle": "FENNER-POWER TRANSMISSION PRODUCTS"
+						},
+						{
+							"imageSource": "/img/Hart-Door-Systems.jpg",
+							"link": "#",
+							"imageTitle": "HART DOOR SYSTEMS"
+						},
+						{
+							"imageSource": "/img/Himoinsa_logo2.jpg",
+							"link": "#",
+							"imageTitle": "HIMOINSA"
+						},
+						{
+							"imageSource": "/img/NASSAU-SECTIONAL-DOORS.jpg",
+							"link": "#",
+							"imageTitle": "NASSAU SECTIONAL DOORS"
+						},
+						{
+							"imageSource": "/img/Proto_logo.jpg",
+							"link": "#",
+							"imageTitle": "PROTO INDUSTRIAL HAND TOOLS"
+						},
+						{
+							"imageSource": "/img/StertilDock_logo.jpg",
+							"link": "#",
+							"imageTitle": "STERTIL DOCK PRODUCTS"
+						}
+					],
 					"exploreButton": {
 						"link": "#",
 						"title": "Explore Parts & Body Shop"
@@ -157,6 +228,28 @@
 				},
 				{
 					"id": "rental-leasing",
+					"brandList": [
+						{
+							"imageSource": "/img/Hertz_logo.jpg",
+							"link": "#",
+							"imageTitle": "HERTZ"
+						},
+						{
+							"imageSource": "/img/AVR_logo.jpg",
+							"link": "#",
+							"imageTitle": "AL-FUTTAIM VEHICLE RENTALS"
+						},
+						{
+							"imageSource": "/img/firefly_logo.jpg",
+							"link": "#",
+							"imageTitle": "FIREFLY"
+						},
+						{
+							"imageSource": "/img/Thrifty_logo.jpg",
+							"link": "#",
+							"imageTitle": "THRIFTY RENTAL CAR - OMAN"
+						}
+					],
 					"exploreButton": {
 						"link": "#",
 						"title": "Explore Rental & Leasing"

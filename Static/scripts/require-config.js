@@ -27,7 +27,8 @@
 			vendor: 'lib/bower',
 			templates: 'templates',
 			pikaday: 'lib/pikaday',
-			moment: 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min'
+			moment: 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min',
+			waypoints: 'lib/bower/waypoints'
 		},
 		map: {
 		    '*': {

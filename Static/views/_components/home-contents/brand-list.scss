@@ -155,19 +155,48 @@ li.brand-sub-category {
 			}
 		}
 	}
+	&.active:after, &.active:before {
+		top: 98%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		z-index: 2;
+		pointer-events: none;
+	}
+
+	&.active:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #fff;
+		border-width: 15px;
+		margin-left: -15px;
+	}
+	&.active:before {
+		border-color: rgba(204, 204, 204, 0);
+		border-top-color: #bbb;
+		border-width: 16px;
+		margin-left: -16px;
+	}
 }
 
-.col-subtab {
-	&-6 {
-		width: 100% / 6;
+@for $num from 1 through 6 {
+	.col-subtab-#{$num} {
+		width: 100% / $num;
 	}
-	&-5 {
-		width: 20%;
-	}
-	&-3 {
-		width: 100% / 3;
-	}
-	&-4 {
-		width: 25%;
-	}
+}
+
+
+// Fix Bootstrap tabs + Owl Carousel bug
+.tab-content > .tab-pane {
+	display: block;
+    visibility: hidden !important;
+    height: 0px !important;
+    overflow: hidden !important;
+}
+.tab-content > .active {
+    visibility: visible !important;
+    height: auto !important;
+    overflow: visible !important;
 }
