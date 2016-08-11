@@ -1,56 +1,40 @@
 ---
 title: "Header Slider"
 ---
-<div class="header-slider" data-require="base/views/header_slider">
-    <div>
-        {{#each this.items}}
-        <div class="header-slider__item">
-            <picture>
-                <source media="(min-width: 75rem)" srcset="{{largeImage}}">
-                <source media="(min-width: 62rem)" srcset="{{desktopImage}}">
-                <source media="(min-width: 48rem)" srcset="{{tabletImage}}">
-                <img class="header-slider__item__image-preview" src="{{mobileImage}}" alt="" />
-            </picture>
-         
-            <div class="header-slider__item__text">
-                <h3>{{text}}</h3>
-                <p>{{sub}}</p>
-                <div class="header-button-container">
-                    {{#if this.textButton1}}
-                    <a class="header-button-normal" href="{{urlButton1}}" title="">{{textButton1}}</a>
-                    <a class="header-button-mobile" href="{{urlButton1}}" title="">{{textButton1Mobile}}</a>
-                    {{/if}}
-
-                    {{#if this.textButton2}}
-                    <a class="header-button__white-bg" href="{{urlButton2}}" title="">
-                        <img src="{{iconButton_hover}}" alt="" class="header-button__white-bg__img--hover" />
-                        <img src="{{iconButton2}}" alt="" class="header-button__white-bg__img" />
-                        <span>{{textButton2}}</span>
-                    </a>
-                    {{/if}}
-                </div>
+<div class="header-slider" >
+    <img src="/img/header_slider_image1.jpg">
+    <div class="header-slider__text">
+        <h3>Entrepreneurship and customer focus is the backbone of the Al-Futtaim business
+        </h3>
+        <div class="header-button-container button-arrow-right">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <a href="#">discover the group</a>
+        </div>
+    </div>
+    
+    <div class="header-slider__ticker" data-require="base/views/header_ticker">
+        <div class = "row">
+             
+            <div class="col-md-2 col-lg-2 heading">
+                <h2>updates</h2>
             </div>
-
-            <div class="header-slider__item__ticker">
-                <div class = "row">
-                    <div class="col-md-2 col-lg-2 heading">
-                        <h2>{{head}}</h2>
-                    </div>
+            
+            <div class="owl-carousel">
+                {{#each this.tickers}}
                     <div class="col-md-8 col-lg-8 content">
                         <p>{{ticker}}</p>
-
                     </div>
-                    <div class="col-md-2 col-lg-2 arrow">
-                        <a class="swiper-button-prev">
-                        </a>
-                        <a class="swiper-button-next">
-                        </a>
-                    </div>
-                </div>
+                {{/each}}
             </div>
+            
+            <div class="col-md-2 col-lg-2 arrow">
+                <a class="swiper-button-prev"></a>
+                <a class="swiper-button-next"></a>
+            </div>
+            
         </div>
-        {{/each}}
     </div>
+            
 </div>
 
 
