@@ -98,9 +98,12 @@
         .row{
             background: #ffffff;
             margin-right: 80px;
+            height: 100%;
             margin-left: 80px;
             .heading{
                 border-right: 1px solid #e6e6e6;
+                height: 100%;
+                text-align: center;
             }
             .heading:before{
                 content:'';
@@ -128,22 +131,27 @@
                 z-index: 0;
             }
             h2{
+                font-size: 'Raleway Medium',sans-serif;
                 text-transform: uppercase;
                 line-height: rem(45px);
+                margin: 28px auto;
                 font-size: 35px;
+                font-weight: 900;
                 height:45px;
-                padding-left: 50px;
-                padding-right: 50px;
+                margin: 28px auto;
+                text-align: center;
             }
             p{  
                 line-height: rem(75px);
                 height:45px;
-                padding-left: 60px;
+                text-align: left;
+                margin-top: 13px;
+                margin-left: 60px;
             }
             .arrow{
                 position: absolute;
                 right: 0px;
-                top: 35px;
+                top: 50px;
                 a{
                     width: 16px;
                     height: 16px;
