@@ -3,51 +3,77 @@
 	background-color: #199fe0;
 }
 
-.bottom-cta .row {
-	margin: 50px 0;
+.bottom-cta > .container > .row {
+	margin: 50px 0 0;
 
 	& > div {
 		padding: 0;
 	}
 
 	& > div:nth-child(1) .bottom-cta-item {
-		margin-right: 20px;
+		@include respond-to-min($desktopSize) {
+			margin-right: 15px;
+			margin-bottom: 0;
+
+		}
 	}
 
 	& > div:nth-child(2) .bottom-cta-item{
-		margin-left: 20px;
+		@include respond-to-min($desktopSize) {
+			margin-left: 15px;
+		}
 	}
 }
 
 .bottom-cta-item {
 	position: relative;
+	margin-bottom: 50px;
+	background-color: #fff;
 
 	&__header {
-		@extend %position-absolute;
 		@include ralewayNormal;
-		left: 50px;
-		top: 30px;
+		display: inline-block;
+		margin: 35px 0 0 50px;
 		color: #1364ad;
 		font-size: 26px;
 		font-weight: 400;
+
+		@include respond-to-min-max($desktopSize, $laptopSize) {
+			margin-left: 15px;
+		}
+
+		@include respond-to-max($mobileSize) {
+		    font-size: 20px;
+    		margin: 15px 15px 0;
+		}
 	}
 
 	&__img {
-		@extend %full-width;
+		width: auto;
+    	max-height: 178px;
+    	max-width: 100%;
+
+		@include respond-to-min($desktopSize) {
+			width: 100%;
+		}
 	}
 
 	&__description {
-	    @extend %position-absolute;
 	    @include ralewayNormal;
-	    left: 240px;
-	    top: 80px;
-	    width: 45%;
 	    color: #1c1c1b;
 	    font-size: 16px;
 	    font-weight: 400;
+	    margin-top: 15px;
+
+	    p {
+	    	padding-right: 20px;
+	    }
 	}
 
 	&__link {
+		display: inline-block;
+		margin-bottom: 15px;
+
 		a {
 			@include ralewayBlack;
 			text-transform: uppercase;
@@ -60,8 +86,8 @@
 		span {
 			color: #094c97;
 			border-color: #094c97;
-			width: 35px;
-			line-height: 31px;
+			width: 30px;
+			line-height: 26px;
 		}
 	}
 }
