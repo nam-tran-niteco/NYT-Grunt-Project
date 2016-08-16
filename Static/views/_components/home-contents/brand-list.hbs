@@ -19,7 +19,7 @@ title: "Brand List"
 							<path d="{{this.d}}" fill="{{this.fill}}"></path>
 							{{/each}}
 						</svg>
-						{{this.title}}
+						<p>{{this.title}}</p>
 					</a>
 				</li>
 				{{/each}}
@@ -34,7 +34,7 @@ title: "Brand List"
 						</li>
 						{{/each}}
 					</ul>
-					<div class="tab-content">
+					<div class="tab-content brand-sub-category__body">
 						{{#each this.subCategoryContent}}
 						<div id="{{this.id}}" class="tab-pane{{#if @first}} active{{/if}}">
 							<div class="owl-carousel brand-logos">
