@@ -5,7 +5,6 @@
         $('.brand-logos').each(function() {
             var $this = $(this);
             $this.owlCarousel({
-                items: 1,
                 dots: false,
                 nav: true,
                 navText: [
@@ -14,12 +13,15 @@
                 ],
                 responsive: {
                     0: {
-                        items: 1
+                        items: 2
                     },
-                    600: {
+                    768: {
                         items: 3
                     },
-                    1000: {
+                    992: {
+                        items: 4
+                    },
+                    1440: {
                         items: 5
                     }
                 }
