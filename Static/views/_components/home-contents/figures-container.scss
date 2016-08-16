@@ -11,8 +11,7 @@
     }
 
     .figures{
-        margin: 35px 0 50px;
-        padding: 0;
+        padding: 60px 0 80px;
 
         &__list{
             list-style: none;
@@ -31,7 +30,12 @@
                         font-style: normal;
                     }
 
-                    &__icon{
+                    @include respond-to-min-max($desktopSize, $laptopSize) {
+                        font-size: 52px
+                    }
+                }
+
+                &__icon{
                         display: inline-block;
                         $icon_size: 55px;
                         width: $icon_size;
@@ -42,12 +46,21 @@
                             height: 100%
                         }
                     }
-                }
 
                 h4{
                     font-weight: 100;
                     font-size: 20px;
                     text-align: center
+                }
+            }
+        }
+
+        @include respond-to-min-max($tabletSize, $desktopSize) {
+            &{
+                padding: 40px 0 50px; 
+                
+                .figure{
+                    margin: 20px 0
                 }
             }
         }

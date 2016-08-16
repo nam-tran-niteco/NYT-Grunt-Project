@@ -6,13 +6,13 @@ title: "Figures Container"
     <div class="container">
         <div class="row">
             {{#with figures-container}}
-            <div class="title-content">
+            <div class="title-content hidden-xs hidden-sm hidden-md">
                 <p>{{this.title_content}}</p>
             </div>
-            <div class="figures col-sm-12">
+            <div class="figures col-xs-12">
                 <ul class="figures__list">
                     {{#each this.items}}
-                        <li class="figure col-lg-3">
+                        <li class="figure col-xs-12 col-sm-6 col-lg-3">
                             <span class="figure__item" count={{this.count}}>
                                 <span class="figure__icon"><img src="{{this.icon_url}}"></span>
                                 <i>{{this.count_text}}</i>

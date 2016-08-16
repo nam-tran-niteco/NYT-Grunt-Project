@@ -3,12 +3,12 @@ title: "Whatsnew"
 ---
 
 <div class="whatsnew">
-    <div class="container-fluid">
+    <div class="container">
         <div class="title">
             <h2>What's new</h2>
         </div>
-        <div class="article-campaign">
-            <div class="article-campaign__body">
+        <div class="article-campaign" data-require="base/views/scroll">
+            <div class="article-campaign__body row">
                 {{#each home-whatsnew.items}}
                 <div class="content-column">
                     {{#if this.odd}}
@@ -60,6 +60,12 @@ title: "Whatsnew"
                     {{/if}}
                 </div>
                 {{/each}}
+            </div>
+            <div class="toggle-button toggle-right-button">
+                <span class="glyphicon glyphicon-chevron-right arrow-circle"></span>
+            </div>
+            <div class="toggle-button toggle-left-button hidden-md hidden-lg">
+                <span class="glyphicon glyphicon-chevron-left arrow-circle"></span>
             </div>
         </div>
     </div>
