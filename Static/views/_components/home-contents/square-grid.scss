@@ -3,22 +3,22 @@
     @include ralewayNormal();
     .square-item{
         overflow: hidden;
-        min-height: 340px;
+        height: 340px;
         padding: 0;
 
         .content{
-            margin: 58px 74px;
+            margin: 36px 37px;
             color: #fff;
 
             h2{
-                font-size: 32px;
+                font-size: 22px;
                 text-transform: uppercase;
-                font-weight: 100;
+                font-weight: 100;            
             }
 
             p{
-                font-size: 18px;
-                margin: 24px 0
+                font-size: 17px;
+                margin: 28px 0
             } 
 
             a {
@@ -28,19 +28,51 @@
                     border-color: #fff;
                 }
             }
+
+            @include respond-to-min($mobileLandscapeSize) {
+                h2{
+                    font-size: 30px
+                }
+
+                p{
+                    font-size: 20px
+                }
+            }
+
+            @include respond-to-min($tabletSize) {
+                h2{
+                    font-size: 38px
+                }
+
+                p{
+                    font-size: 25px
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                h2{
+                    font-size: 28px
+                }
+
+                p{
+                    font-size: 21px
+                }
+            }
+
+            @include respond-to-min($largeSize) {
+                h2{
+                    font-size: 34px
+                }
+
+                p{
+                    font-size: 18px
+                }
+
+                &{
+                    margin: 70px 60px
+                }
+            }
             
-        }
-
-        &.square-img{
-            img{
-                width: 100%;
-                transition: all 0.3s ease-in-out;
-                height: 340px;
-            }
-
-            &:hover img{
-                transform: scale(1.1);
-            }
         }
 
         &.left{
@@ -49,6 +81,18 @@
 
         &.right{
             background: rgb(14, 116, 128)
+        }
+    }
+
+    .square-img{
+        img{
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+            height: 340px;
+        }
+
+        &:hover img{
+            transform: scale(1.1);
         }
     }
     

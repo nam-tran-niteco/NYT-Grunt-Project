@@ -67,6 +67,24 @@
                 "subtitle": "Have fun being playful"
             },
             "odd": false
+        },
+        {
+            "news-grid-article":{
+                "article__image":{
+                    "src": "/img/article-5.png"
+                },
+                "article__body":{
+                    "date": "october 15, 2015",
+                    "content": "Al-Futtaim Travel opens new outlet at Mega Mall, Sharjah"
+                }
+            },
+            "news-grid-campaign":{
+                "src": "/img/campaign-5.png",
+                "title": "toyota",
+                "subtitle": "Dream house"
+            },
+            "odd": true
         }
+        
     ]
 }

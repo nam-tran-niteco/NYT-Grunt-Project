@@ -1,5 +1,5 @@
 .whatsnew{
-    $item-height: 250px;
+    
     $transition: all 0.3s ease-in-out;
     width: 100%;
     background: url('/img/whatsnews.png');
@@ -13,26 +13,59 @@
 
         h2{
             color: #1a9fe0;
-            font-size: 140px;
+            font-size: 44px;
             text-align: center;
             margin: 0;
             font-weight: 900;
-            transform: translateY(34px);
-            @include ralewayBlack()
+            transform: translateY(16px);
+            @include ralewayBlack();
+
+            @include respond-to-min($mobileSize) {
+                font-size: 60px;
+            }
+
+            @include respond-to-min($mobileLandscapeSize) {
+                font-size: 76px;
+                transform: translateY(27px)
+            }
+
+            @include respond-to-min($tabletSize) {
+                font-size: 105px
+            }
+
+            @include respond-to-min($desktopSize) {
+                font-size: 124px;
+                transform: translateY(34px)
+            }
+
+            @include respond-to-min($largeSize) {
+                font-size: 140px;
+                
+            }
         }
     }
 
     .article-campaign{
-        overflow: hidden;
+        overflow-x: scroll;
         width: 100%;
+        position: relative;
+
+        &::-webkit-scrollbar{
+            display: none
+        }
+
+        @include respond-to-min(800px) {
+            overflow-x: visible
+        }
 
         .article-campaign__body{
-            margin-left: 6%;
-            width: 100%;
+            transition: $transition;
+            width: 1920px;
 
             .content-column{
                 float: left;
-                width: 25%;
+                width: 320px;
+                $item-height: 240px;
 
                 .article__image, .article__content, .campaign__content{
                     height: $item-height;
@@ -109,6 +142,39 @@
                     }
                 }
             }
+        }
+
+        .toggle-button{
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+
+            @include respond-to-max($desktopSize) {
+                display: none
+            }
+        }
+
+        .arrow-circle{
+            color: #fff;
+            background: #084c97;
+            border: none;
+            width: 60px;
+            line-height: 56px;
+            font-size: 32px;
+            height: 60px;
+        }
+
+        .arrow-circle:hover{
+            color: #084c97;
+            background: #fff
+        }
+
+        .toggle-right-button{
+            right: -30px
+        }
+
+        .toggle-left-button{
+            left: -24px
         }
     }
 }

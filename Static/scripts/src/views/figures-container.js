@@ -5,20 +5,6 @@
         var time_stop = 5000
         $('.figures-container').waypoint({
             handler: function() {
-                // for(let i = 0; i < 4; i++){
-                //     var item = $('.item-' + i)
-                //     var count = item.attr('count')
-                //     var loop_number = 0
-                //     var offset = count / time_stop
-                //     setInterval(function(){
-                //         if(loop_number > count){
-                //             item.html(count)
-                //             return
-                //         }
-                //         loop_number += offset 
-                //         item.html(Math.round(loop_number))
-                //     }, time_stop / count)
-                // }
                 $('.figure__item i').each(function(){
                     $(this).prop('Counter', 0).animate({
                         Counter: $(this).parent().attr('count')
@@ -41,7 +27,52 @@
             },
             offset: "60%"
         })
+
+        desktopSizeCustomAddClass()
+        // var still_medium_size = is_medium_size()        
+        // $(window).on('resize', function(){
+        //     if (is_medium_size()){
+        //         if (!still_medium_size){
+        //             still_medium_size = true
+        //             desktopSizeCustomAddClass()
+        //         }
+        //     }
+        //     else {
+        //         if (still_medium_size){
+        //             still_medium_size = false
+        //             desktopSizeCustomRemoveClass()
+        //         }
+        //     }
+        // })
     }
+
+    function desktopSizeCustomAddClass(){
+        $('.figure').each(function(index, value){
+            switch(index){
+                case 0: $(this).addClass("col-md-4"); break;
+                case 1: $(this).addClass("col-md-3"); break;
+                case 2: $(this).addClass("col-md-3"); break;
+                case 3: $(this).addClass("col-md-2"); break;
+            }
+        })
+    }
+
+    // function desktopSizeCustomRemoveClass(){
+    //     $('.figure').each(function(index, value){
+    //         switch(index){
+    //             case 0: $(this).removeClass("col-md-4"); break;
+    //             case 1: $(this).removeClass("col-md-3"); break;
+    //             case 2: $(this).removeClass("col-md-3"); break;
+    //             case 3: $(this).removeClass("col-md-2"); break;
+    //         }
+    //     })
+    // }
+
+    // function is_medium_size(){
+    //     var windowWidth = $(window).innerWidth()
+    //     if( windowWidth >= 992 && windowWidth <= 1200 ) return true
+    //     return false
+    // }
 
     return {
         init: function (container, isCreate) {
